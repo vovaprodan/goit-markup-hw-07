@@ -30,9 +30,9 @@ body {
 .container {
     margin-right: auto;
     margin-left: auto;
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
     
 }
 .hidden {
@@ -160,26 +160,18 @@ color: var(--hover-active-color);
         rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-    
-    
-
-    padding-top: 180px;
-    padding-bottom: 196px;
-
+    padding-top: 112px;
+    padding-bottom: 112px;
     text-align: center;
     background-color: var(--primery-bg-color);
 }
-.container-hero {
-
-}
 .hero-title {
-    margin-top: 0;
-    margin-bottom: 48px;
-
+    max-width: 320px;
+    margin-bottom: 72px;
     color: var(--white-color);
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
    
     letter-spacing: 0.02em;
 }
@@ -278,16 +270,20 @@ margin-right: 24px;
 .section.our-team {
    background-color: var(--secondbery-bg-color );
 }
-.content-team {
-    text-align: center;
-    display: flex;
+.container-our-team {
+    padding: 96px 82px 128px 82px;
 }
-.content-team>.item {
+.content-team {
+    max-width: 264px;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+/* .content-team>.item {
     margin-right: 24px;
 }
 .content-team>.item:last-child {
     margin-right: 0;
-}
+} */
 .content-team > .item {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -295,7 +291,7 @@ margin-right: 24px;
   background-color: var(--white-color);
 }
 .box-team{
-    padding: 32px 16px;
+    padding: 32px 14px;
 }
 .name-team {
     margin-bottom: 8px;
