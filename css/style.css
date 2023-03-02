@@ -18,8 +18,8 @@ body {
     font-size: 16px;
 }
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .list {
     padding-left: 0;
@@ -152,8 +152,6 @@ color: var(--hover-active-color);
 .hero {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1440px;
-    height: 600px;
     background-image: linear-gradient(
          to right,
         rgba(46, 47, 66, 0.7),
@@ -166,13 +164,11 @@ color: var(--hover-active-color);
     background-color: var(--primery-bg-color);
 }
 .hero-title {
-    max-width: 320px;
     margin-bottom: 72px;
     color: var(--white-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-   
     letter-spacing: 0.02em;
 }
 .button {
@@ -196,14 +192,17 @@ color: var(--hover-active-color);
 }
 /* наши переваги */
 .our-advantages {
-    padding-top: 82px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .content {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 72px;
 }
 .content>.item {
-    width: 264px;
-    margin-right: 24px;
+    /* width: 264px; */
 }
 
 .content>.item:last-child {
@@ -211,11 +210,11 @@ color: var(--hover-active-color);
 }
 
 .advantages-span {
-    display: block;
-    padding: 24px 100px;
+    display: none;
+    /* padding: 24px 100px;
     height: 112px;
     display: block;
-    background-color: var(--hover-card-color);
+    background-color: var(--hover-card-color); */
 }
 .advantages-icon {
     width: 64px;
@@ -225,13 +224,14 @@ color: var(--hover-active-color);
 
 
 .advantages-title {
-
+    text-align: center;
     margin-bottom: 8px;
-    margin-top: 8px;
+    margin-top: 0;
       
     font-weight: 500;
-    font-size: 20px;
+    font-size: 32px;
     line-height: 1.2;
+    text-transform: capitalize;
     letter-spacing: 0.02em;
 }
 
@@ -240,10 +240,14 @@ color: var(--hover-active-color);
     margin-bottom: 0;
 
     color: var(--secondbery-text-color);
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 /* Що ми будемо робити  */
+.work{
+    display: none;
+}
 .content-work {  
     display: flex;
 }
@@ -255,7 +259,6 @@ margin-right: 24px;
 }
 
 .section-title {
-    margin-top: 0;
     margin-bottom: 72px;
 
     font-weight: 700;
@@ -271,12 +274,15 @@ margin-right: 24px;
    background-color: var(--secondbery-bg-color );
 }
 .container-our-team {
-    padding: 96px 82px 128px 82px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 296px;
 }
 .content-team {
     max-width: 264px;
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
 }
 /* .content-team>.item {
     margin-right: 24px;
@@ -291,17 +297,19 @@ margin-right: 24px;
   background-color: var(--white-color);
 }
 .box-team{
-    padding: 32px 14px;
+    padding: 32px 16px;
 }
 .name-team {
     margin-bottom: 8px;
     margin-top: 0;
+    text-align: center;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
 .post-team {
+    text-align: center;
     margin-top: 0;
     margin-bottom: 8px;
     color: var(--secondbery-text-color);
@@ -346,13 +354,17 @@ margin-right: 24px;
 }
 .list-customers {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 16px;
+
 }
-.list-customers>.item {
+/* .list-customers>.item {
     margin-right: 24px;
 }
 .list-customers>.item:last-child {
-    margin-right: 0;
-}
+    margin-right: 0; */
+
 
 
 .link-customers {
@@ -373,7 +385,7 @@ margin-right: 24px;
 }
 
 .icon {
-    width: 104px;
+    width: 110px;
     height: 56px;
     fill: currentColor;
     /* fill: var(--icon-bg-color) */
