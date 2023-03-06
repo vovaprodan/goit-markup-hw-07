@@ -8,6 +8,103 @@
     .container {
         max-width: 768px;
     }
+        .menu-open {
+            display: none;
+        }
+        .mob-menu {
+            display: none;
+        }
+                .nav-header {
+                    align-items: center;
+                    display: flex;
+                }
+        
+                .nav {
+                    display: flex;
+                    align-items: center;
+                    gap: 120px;
+                }
+
+                .nav-list {
+                    display: flex;
+                
+                }
+        
+                .nav-list .item+.item {
+                    margin-left: 40px;
+                }
+        
+                .nav-link {
+                    display: block;
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+        
+                    text-decoration: none;
+                    color: var(--primary-text-color);
+                    font-weight: 500;
+                    line-height: 1.5;
+                    letter-spacing: 0.02em;
+        
+                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
+        
+                .nav-link:hover,
+                .nav-link:focus {
+        
+                    color: var(--hover-active-color);
+                }
+        
+                .nav-link.current {
+                    position: relative;
+                    color: var(--hover-active-color);
+                }
+        
+                .nav-link.current::after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    content: "";
+                    display: inline-block;
+                    width: 100%;
+                    height: 4px;
+                    border-radius: 4px;
+                    background-color: var(--hover-active-color);
+                }
+        
+                .address {
+                    display: block;
+                    margin-left: 120px;
+                }
+        
+                .address-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+        
+                /* .address-list .item+.item {
+                    margin-left: 40px;
+                } */
+        
+                .mail-tell {
+                    font-style: normal;
+                    color: var(--secondbery-text-color);
+                    line-height: 1.5;
+                    font-size: 12px;
+                    letter-spacing: 0.02em;
+                    text-decoration: none;
+        
+                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
+        
+                .mail-tell:hover,
+                .mail-tell:focus {
+                    color: var(--hover-active-color);
+                }
+        
+                .content>.item {
+                    margin-bottom: 0;
+                    width: 264px;
+                }
         .hero-title{
       font-size: 56px;
       line-height: 1.07;
@@ -70,6 +167,16 @@
         .container-form {
             width: 453px;
         }
+        .subscribe {
+            text-align: start;
+        }
+        .footer-input {
+            width: 264px;
+        }
+        .form-footer {
+            display: flex;
+            gap: 24px;
+        }
 }
 
 @media screen and (min-width: 1200px) {
@@ -82,104 +189,24 @@
             padding-top: 120px;
             padding-bottom: 120px;
         }
-        .nav-header {
-            align-items: center;
-            display: flex;
+        .content {
+            flex-wrap: nowrap;
         }
-    
-        .nav {
-            align-items: center;
-            display: flex;
+        .content>.item {
+            width: 264px;
         }
-    
         
-    
-        .nav-list {
-            margin-left: 76px;
-            display: flex;
-        }
-    
-        .nav-list .item+.item {
-            margin-left: 40px;
-        }
-    
-        .nav-link {
-            display: block;
-            padding-top: 24px;
-            padding-bottom: 24px;
-    
-            text-decoration: none;
-            color: var(--primary-text-color);
-            font-weight: 500;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-    
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .nav-link:hover,
-        .nav-link:focus {
-    
-            color: var(--hover-active-color);
-        }
-    
-        .nav-link.current {
-            position: relative;
-            color: var(--hover-active-color);
-        }
-    
-        .nav-link.current::after {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            content: "";
-            display: inline-block;
-            width: 100%;
-            height: 4px;
-            border-radius: 4px;
-            background-color: var(--hover-active-color);
-        }
-        .address {
-            margin-left: auto;
-        }
-    
-        .address-list {
-            display: flex;
-        }
-    
-        .address-list .item+.item {
-            margin-left: 40px;
-        }
-    
-        .mail-tell {
-            font-style: normal;
-            color: var(--secondbery-text-color);
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            text-decoration: none;
-    
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .mail-tell:hover,
-        .mail-tell:focus {
-            color: var(--hover-active-color);
-        }
-                .content>.item {
-                    margin-bottom: 0;
-                    width: 264px;
-                }
-        
-         /* .advantages-span {
+        .advantages-span {
             display: block;
             padding: 24px 100px;
             height: 112px;
+            margin-bottom: 8px;
             background-color: var(--hover-card-color);
                 }    
-                .advantages-icon {
-                    width: 64px;
-                    height: 64px; */
-                
+        .advantages-icon {
+            width: 64px;
+            height: 64px;
+        }
         .list-customers {
             display: flex;
             flex-wrap: nowrap;     

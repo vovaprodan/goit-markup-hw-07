@@ -69,7 +69,7 @@ img {
     color: var(--brend-color);
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.33px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-decoration: none;
 
@@ -249,9 +249,6 @@ img {
 
 .advantages-span {
     display: none;
-    padding: 24px 100px;
-    height: 112px;
-    background-color: var(--hover-card-color);
 }
 
 .advantages-icon {
@@ -529,9 +526,6 @@ margin-bottom: 72px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--white-color);
-}
-.form-footer {
-
 }
 
 .footer-input {
