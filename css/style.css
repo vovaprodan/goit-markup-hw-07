@@ -17,6 +17,9 @@ body {
     color: var(--primary-text-color);
     font-size: 16px;
 }
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
 .section {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -201,11 +204,12 @@ img {
     ),
     url(../images/people-office.jpg);
     padding-top: 112px;
-    padding-bottom: 112px;
+    padding-bottom: 108px;
     text-align: center;
     background-color: var(--primery-bg-color);
 }
 .hero-title {
+    margin-top: 0;
     margin-bottom: 72px;
     color: var(--white-color);
     font-weight: 700;
@@ -284,26 +288,7 @@ img {
 .work{
     display: none;
 }
-.content-work {  
-    display: flex;
-}
-.content-work>.item {
-margin-right: 24px;
-}
-.content-work > .item:last-child {
-    margin-right: 0;
-}
 
-.section-title {
-    margin-bottom: 72px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-}
 
 /* наша команда */
 .section.our-team {

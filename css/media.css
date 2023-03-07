@@ -185,9 +185,31 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+    .logo {
+        line-height: 1.33;
+    }
+    .nav {
+        gap: 76px;
+    }
+    .address {
+        margin-left: auto;
+    }
+    .address-list {
+        gap: 40px;
+    }
+    .mail-tell {
+        font-size: 16px;
+    }
         .section {
             padding-top: 120px;
             padding-bottom: 120px;
+        }
+        .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+        .hero-title {
+            margin-bottom: 48px;
         }
         .content {
             flex-wrap: nowrap;
@@ -207,6 +229,35 @@
             width: 64px;
             height: 64px;
         }
+        .work {
+            display: block;
+            padding-top: 0;
+        }
+                .content-work {
+                    display: flex;
+                }
+        
+                .content-work>.item {
+                    margin-right: 24px;
+                }
+        
+                .content-work>.item:last-child {
+                    margin-right: 0;
+                }
+        
+                .section-title {
+                    margin-bottom: 72px;
+        
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 1.11;
+                    text-align: center;
+                    letter-spacing: 0.02em;
+                    text-transform: capitalize;
+                }
+            .content-team {
+                flex-wrap: nowrap;
+            }
         .list-customers {
             display: flex;
             flex-wrap: nowrap;     
