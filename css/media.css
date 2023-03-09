@@ -140,6 +140,9 @@
             margin-right: 0;
             width: calc((100%-24px) / 2);
         }
+        .container-customers {
+            max-width: 552px;
+        }
         .list-customers {
         column-gap: 24px;
         }
@@ -147,18 +150,20 @@
             width: calc((100% - 48px) / 3);
         }
         .container-footer {
-            max-width: 768px;
+            max-width: 552px;
             display: flex;
             flex-wrap: wrap;
         }
         .container-logo-text {
             width: 264px;
             margin-right: 24px;
+            margin-bottom: 0;
         }
         .footer-link {
             text-align: start;
         }
         .container-social {
+            margin-bottom: 0;
             width: 208px;
         }
         .social {
@@ -177,6 +182,9 @@
             display: flex;
             gap: 24px;
         }
+         .model {
+            width: 408px;
+         }
 }
 
 @media screen and (min-width: 1200px) {
@@ -245,24 +253,32 @@
                     margin-right: 0;
                 }
         
-                .section-title {
-                    margin-bottom: 72px;
-        
-                    font-weight: 700;
-                    font-size: 36px;
-                    line-height: 1.11;
-                    text-align: center;
-                    letter-spacing: 0.02em;
-                    text-transform: capitalize;
-                }
+                
             .content-team {
+                margin-left: 0;
+                margin-right: 0;
                 flex-wrap: nowrap;
             }
         .list-customers {
-            display: flex;
             flex-wrap: nowrap;     
         }
         .list-customers>.item {
         width: calc((100% - 120px) / 6);
         }
+        .container-footer {
+            flex-wrap: nowrap;
+            max-width: 1158px;
+        }
+        .container-logo-text {
+            margin-right: 120px;
+        }
+        .container-social {
+            margin-right: 80px;
+        }
+         .footer-input {
+            margin-bottom: 0;
+         }
+         .model {
+            height: 584;
+         }
 }
