@@ -102,6 +102,9 @@ img {
     background-color: transparent;
     border: none;
 }
+.icon-menu-mob {
+   stroke: var(--primary-text-color);
+}
 .mob-menu {
     position: fixed;
     top: 0;
@@ -210,12 +213,28 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/mob-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 112px;
     padding-bottom: 108px;
     text-align: center;
     background-color: var(--primery-bg-color);
 }
+@media 
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+        background-image: linear-gradient(to right,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/mob-bg@2x.jpg);
+    }
+}
+
+
 .hero-title {
     margin-top: 0;
     margin-bottom: 72px;
