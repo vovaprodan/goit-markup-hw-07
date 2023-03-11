@@ -194,7 +194,7 @@ img {
     color: var(--secondbery-text-color);
 }
 .list-icon > .mob-item:not(:last-child) {
-    margin-right: 56px;
+    margin-right: 32px;
 }
 .list-icon>.mob-item {
     /* width: calc((100% - 16px) / 2); */
@@ -295,9 +295,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     margin-bottom: 8px;
     margin-top: 0;
       
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     text-transform: capitalize;
     letter-spacing: 0.02em;
 }
@@ -306,6 +306,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     margin-top: 0;
     margin-bottom: 0;
 
+    font-weight: 500;
     color: var(--secondbery-text-color);
     font-size: 16px;
     line-height: 1.5;
@@ -755,15 +756,15 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     pointer-events: none;
 }
 .model {
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
     position: absolute;
     top:50%;
     left:50%; 
     transform: translate(-50%, -50%);
     border-radius: 4px;
 
-    width: 392px;
-    height: 586px;
+    width: 310px;
+    height: 624px;
     background-color: #fcfcfc;
 }
 .modal-button {
